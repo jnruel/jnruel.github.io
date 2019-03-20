@@ -7,6 +7,7 @@
   "scripts": {
     "build": "webpack",
     "serve": "webpack-dev-server --config webpack.config.js",
+    "deploy": "npm run build && gh-pages -d dist -b master",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
