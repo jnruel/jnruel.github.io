@@ -1,5 +1,119 @@
-.test {
-  .test-test {
-    background-color: black;
+@import '../../node_modules/normalize-scss/sass/normalize';
+
+$multiplier: 1.1;
+
+$screen-desktop-min: 992px;
+@mixin desktop {
+  @media (min-width: #{$screen-desktop-min}) {
+      @content;
   }
+}
+
+html {
+  font-size: 16px;
+  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+
+h1 {
+  font-size: 3rem * $multiplier;
+}
+
+h2 {
+  font-size: 2rem * $multiplier;
+}
+
+h3 {
+  font-size: 1rem * $multiplier;
+}
+
+a,
+a:visited {
+  color: #85144b;
+  text-decoration: none;
+
+  &:hover,
+  &:active {
+    text-decoration: underline;
+  }
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 350px;
+  padding: 0 1rem;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+
+  @include desktop {
+    max-width: 100%;
+    flex-direction: row;
+  }
+}
+
+.hello {
+  font-size: 3rem;
+}
+
+.name {
+  font-size: 3rem;
+  margin-left: 0.5rem;
+
+  @include desktop {
+    font-size: 4rem;
+  }
+}
+
+.bio {
+  font-size: 1.5rem;
+
+  @include desktop {
+    font-size: 2.5rem;
+  }
+}
+
+.links {
+  font-size: 2rem;
+  display: flex;
+  // align-items: center;
+  justify-content: center;
+
+
+  .icon {
+    width: 3rem;
+    height: 3rem;
+    margin: 0 1rem;
+  }
+}
+
+.intro-left {
+  border-bottom: 2px solid black;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
+  min-width: 260px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  @include desktop {
+    display: block;
+    text-align: right;
+    border-bottom: 0;
+    border-right: 2px solid black;
+    padding-right: 1rem;
+    margin-right: 1rem;
+    padding-bottom: 0rem;
+    margin-bottom: 0rem;
+  }
+}
+
+.intro-right {
+  display: flex;
+  align-items: center;
+  max-width: 720px;
 }
