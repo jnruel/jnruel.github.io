@@ -31,7 +31,7 @@ class App extends Component {
           </div>
           <div className="intro-right">
             <div className="bio">
-            I'm a Chicago-based full stack developer.
+            &hellip;a Chicago-based full stack developer.
             Check me out on <a target="_blank" href="https://github.com/jnruel">Github</a> and <a target="_blank" href="https://www.linkedin.com/in/joeruel/">LinkedIn</a>.
             </div>
           </div>
