@@ -21,11 +21,11 @@ a:visited {
   }
 }
 
-.main {
+.content-main {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 350px;
+  min-height: 250px;
   padding: 0 1rem;
 }
 
@@ -100,4 +100,20 @@ a:visited {
   display: flex;
   align-items: center;
   max-width: 720px;
+}
+
+.content-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .logo-container {
+    width: 150px;
+    height: 150px;
+
+    @include desktop {
+      width: 200px;
+      height: 200px;
+    }
+  }
+
 }
