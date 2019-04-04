@@ -1,8 +1,6 @@
 const path = require('path');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: {
@@ -43,12 +41,6 @@ module.exports = {
       filename: '[name].[hash].css',
       chunkFilename: '[id].[hash].css',
     }),
-    new CleanWebpackPlugin({
-      cleanOnceBeforeBuildPatterns: [],
-    }),
-    new CopyPlugin([
-      { from: 'dist-static', to: './' },
-    ]),
   ],
   optimization: {
     splitChunks: {
