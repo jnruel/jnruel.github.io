@@ -7,7 +7,6 @@ class App extends Component {
   }
 
   render() {
-    console.log('test');
     return (
       <main>
         <div className="content-main">
@@ -23,7 +22,7 @@ class App extends Component {
             <div className="intro-right">
               <div className="bio">
               I'm a full stack developer based in Chicago.
-              Check me out on <a target="_blank" href="https://github.com/jnruel">Github</a> and <a target="_blank" href="https://www.linkedin.com/in/joeruel/">LinkedIn</a>.
+              Check me out on <a target="_blank" href="https://github.com/jnruel" rel="noopener">Github</a> and <a target="_blank" href="https://www.linkedin.com/in/joeruel/" rel="noopener">LinkedIn</a>.
               </div>
             </div>
           </div>
