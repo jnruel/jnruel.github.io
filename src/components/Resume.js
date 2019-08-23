@@ -69,7 +69,7 @@ class Resume extends Component {
 
           <aside className="grid-item sidebar">
             <h2>Skills</h2>
-            <div class="section-container">
+            <div className="section-container">
               <section className="sidebar-section">
                 <h3>Languages</h3>
                 <ul>
