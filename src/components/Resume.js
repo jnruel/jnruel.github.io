@@ -69,56 +69,58 @@ class Resume extends Component {
 
           <aside className="grid-item sidebar">
             <h2>Skills</h2>
-            <section className="sidebar-section">
-              <h3>Languages</h3>
-              <ul>
-                <li>JavaScript</li>
-                <li>PHP</li>
-                <li>CSS/Sass</li>
-                <li>HTML</li>
-                <li>Python</li>
-                <li>Ruby</li>
-              </ul>
-            </section>
-            <section className="sidebar-section">
-              <h3>Tools/Utilities</h3>
-              <ul>
-                <li>Git</li>
-                <li>Gulp</li>
-                <li>Webpack</li>
-                <li>Babel</li>
-                <li>Vagrant NPM/Composer/Bundler</li>
-                <li>NVM/RVM</li>
-                <li>Bash/Zsh</li>
-                <li>Editorconfig</li>
-                <li>ESLint</li>
-              </ul>
-            </section>
-            <section className="sidebar-section">
-              <h3>Frameworks/Libraries</h3>
-              <ul>
-                <li>Drupal</li>
-                <li>WordPress</li>
-                <li>Laravel</li>
-                <li>Rails</li>
-                <li>Bootstrap</li>
-                <li>React</li>
-                <li>Gatsby</li>
-                <li>jQuery</li>
-              </ul>
-            </section>
-            <section className="sidebar-section">
-              <h3>Software</h3>
-              <ul>
-                <li>Mac/Windows</li>
-                <li>CentOS/Ubuntu</li>
-                <li>LAMP Stack</li>
-                <li>VSCode/Sublime</li>
-                <li>Photoshop</li>
-                <li>Illustrator</li>
-                <li>InDesign</li>
-              </ul>
-            </section>
+            <div class="section-container">
+              <section className="sidebar-section">
+                <h3>Languages</h3>
+                <ul>
+                  <li>JavaScript</li>
+                  <li>PHP</li>
+                  <li>CSS/Sass</li>
+                  <li>HTML</li>
+                  <li>Python</li>
+                  <li>Ruby</li>
+                </ul>
+              </section>
+              <section className="sidebar-section">
+                <h3>Tools/Utilities</h3>
+                <ul>
+                  <li>Git</li>
+                  <li>Gulp</li>
+                  <li>Webpack</li>
+                  <li>Babel</li>
+                  <li>Vagrant NPM/Composer/Bundler</li>
+                  <li>NVM/RVM</li>
+                  <li>Bash/Zsh</li>
+                  <li>Editorconfig</li>
+                  <li>ESLint</li>
+                </ul>
+              </section>
+              <section className="sidebar-section">
+                <h3>Frameworks/Libraries</h3>
+                <ul>
+                  <li>Drupal</li>
+                  <li>WordPress</li>
+                  <li>Laravel</li>
+                  <li>Rails</li>
+                  <li>Bootstrap</li>
+                  <li>React</li>
+                  <li>Gatsby</li>
+                  <li>jQuery</li>
+                </ul>
+              </section>
+              <section className="sidebar-section">
+                <h3>Software</h3>
+                <ul>
+                  <li>Mac/Windows</li>
+                  <li>CentOS/Ubuntu</li>
+                  <li>LAMP Stack</li>
+                  <li>VSCode/Sublime</li>
+                  <li>Photoshop</li>
+                  <li>Illustrator</li>
+                  <li>InDesign</li>
+                </ul>
+              </section>
+            </div>
           </aside>
         </div>
       </div>
