@@ -1,6 +1,28 @@
+@function strip-unit($number) {
+  @if type-of($number) == 'number' and not unitless($number) {
+    @return $number / ($number * 0 + 1);
+  }
+
+  @return $number;
+}
+
+@function em-calc($pixels, $context) {
+  $context-num: strip-unit($context);
+  $pixels-num: strip-unit($pixels);
+
+  @return #{$pixels-num/$context-num}em;
+}
+
 html {
   font-size: 16px;
   font-family: 'Montserrat', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  padding: 0;
+  margin: 0;
 }
 
 h1 {
