@@ -5,7 +5,6 @@
 @import 'resume';
 
 html {
-  background-color: #f0f0f0;
   color: #3c3c3c;
 }
 
@@ -21,14 +20,8 @@ a:visited {
   }
 }
 
-// .content-main {
-//   display: flex;
-
-// }
-
 main {
   display: flex;
-  // align-items: center;
   justify-content: center;
   max-width: 1100px;
   width: 100%;
