@@ -3,7 +3,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const Critters = require('critters-webpack-plugin');
 
-
 module.exports = {
   entry: {
     app: './src/index.js'
@@ -30,7 +29,19 @@ module.exports = {
           'postcss-loader',
           'sass-loader'
         ]
-      }
+      },
+      {
+        test: /src[\\/]index\.html$/,
+        use: [
+          {
+            loader: 'prerender-loader',
+            options: {
+              string: true,
+              entry: `./src/index.js`,
+            },
+          },
+        ],
+      },
     ]
   },
   plugins: [
