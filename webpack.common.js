@@ -29,19 +29,7 @@ module.exports = {
           'postcss-loader',
           'sass-loader'
         ]
-      },
-      {
-        test: /src[\\/]index\.html$/,
-        use: [
-          {
-            loader: 'prerender-loader',
-            options: {
-              string: true,
-              entry: `./src/index.js`,
-            },
-          },
-        ],
-      },
+      }
     ]
   },
   plugins: [
