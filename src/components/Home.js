@@ -21,7 +21,7 @@ class Home extends Component {
           </div>
           <div className="intro-right">
             <div className="bio">
-              I'm a web developer based in Chicago. <span>Take a look at my <Link to="/resume">r&eacute;sum&eacute;</Link> or check me out on <a target="_blank" href="https://github.com/jnruel" rel="noopener">Github</a> and <a target="_blank" href="https://www.linkedin.com/in/joeruel/" rel="noopener">LinkedIn</a>.</span>
+              I'm a web developer based in Chicago. <span>Check me out on <a target="_blank" href="https://github.com/jnruel" rel="noopener">Github</a> and <a target="_blank" href="https://www.linkedin.com/in/joeruel/" rel="noopener">LinkedIn</a>.</span>
             </div>
           </div>
         </div>
