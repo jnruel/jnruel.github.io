@@ -10,7 +10,7 @@ html {
 
 a,
 a:visited {
-  color: var(--primary-color);
+  color: var(--link-color);
   font-weight: bold;
   text-decoration: underline;
   text-decoration-style: solid;
@@ -18,8 +18,17 @@ a:visited {
 
   &:hover,
   &:active {
-    text-decoration-color: var(--secondary-color);
     text-decoration-style: dashed;
+  }
+}
+
+.icon-link {
+  svg {
+    color: #1d3b53;
+  }
+
+  &:hover svg {
+    color: var(--primary-color);
   }
 }
 
@@ -83,7 +92,7 @@ main {
 
 .email {
   font-weight: bold;
-  color: var(--secondary-color);
+  // color: var(--secondary-color);
 }
 
 .intro ul {

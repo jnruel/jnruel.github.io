@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import Logo from './Logo';
+import IconLink from './IconLink';
+import Icon from './Icon';
 
 class Home extends Component {
   constructor(props) {
@@ -18,18 +20,18 @@ class Home extends Component {
           <div className="intro-right">
             <div className="bio">
               <p>
-                <strong>Hi, I'm Joe Ruel.&nbsp;</strong>
+                <strong>Hi, I'm Joe.&nbsp;</strong>
                 <span>I enjoy making things with code.&nbsp;</span>
               </p>
               <ul className="links">
                 <code className="comment">// links</code>
-                <li><a href="">Github</a></li>
-                <li><a href="">Codepen</a></li>
-                <li><a href="">LinkedIn</a></li>
+                <li><IconLink url="https://github.com/jnruel" text="Github" icon="github"/></li>
+                <li><IconLink url="https://codepen.io/jruel" text="Codepen" icon="codepen"/></li>
+                <li><IconLink url="https://www.linkedin.com/in/joeruel/" text="LinkedIn" icon="linkedin" /></li>
               </ul>
-              <ul>
+              <ul className="contact">
                 <code className="comment">// contact</code>
-                <li className="email">joe [at] jruel [dot] com</li>
+                <li style={{display: 'flex'}} className="email"><Icon icon="email" /> joe [at] jruel [dot] com</li>
               </ul>
             </div>
           </div>
