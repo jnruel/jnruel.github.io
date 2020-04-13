@@ -2,3 +2,22 @@ $multiplier: 1.1;
 $screen-desktop-min: 992px;
 $screen-tablet-min: 768px;
 
+:root {
+  --primary-color: #3cb371;
+  --link-color: #b33c99;
+  --text-color: #1d3b53;
+  --alt-color: #1d3b53;
+  --bg-color: #FFF;
+  --comment-color: #80a4c2;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-color: #3cb371;
+    --link-color: #b33c99;
+    --text-color: #1d3b53;
+    --alt-color: #1d3b53;
+    --bg-color: #FFF;
+    --comment-color: #80a4c2;
+  }
+}

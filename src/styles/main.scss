@@ -4,18 +4,31 @@
 @import 'base/type';
 
 html {
-  color: #3c3c3c;
+  color: var(--text-color);
+  background-color: var(--bg-color);
 }
 
 a,
 a:visited {
-  color: #3cb371;
-  text-decoration: none;
+  color: var(--link-color);
   font-weight: bold;
+  text-decoration: underline;
+  text-decoration-style: solid;
+
 
   &:hover,
   &:active {
-    text-decoration: underline;
+    text-decoration-style: dashed;
+  }
+}
+
+.icon-link {
+  svg {
+    color: #1d3b53;
+  }
+
+  &:hover svg {
+    color: var(--link-color);
   }
 }
 
@@ -33,9 +46,9 @@ main {
   align-items: center;
   justify-content: center;
   min-height: 250px;
-  padding: 0 1rem;
-  margin-bottom: 2rem;
+  padding: 2rem 1rem;
   max-width: 500px;
+  font-size: 1.5rem;
 
   @include desktop {
     max-width: 100%;
@@ -43,75 +56,58 @@ main {
   }
 }
 
-.bio {
-  font-size: 1.5rem;
-
-  @include desktop {
-    font-size: 2rem;
-  }
-}
-
-.links {
-  font-size: 2rem;
-  display: flex;
-  justify-content: center;
-
-  .icon {
-    width: 3rem;
-    height: 3rem;
-    margin: 0 1rem;
-  }
-}
-
 .intro-left {
-  border-bottom: 2px solid black;
-  padding-bottom: 0.5rem;
-  margin-bottom: 0.5rem;
+  border-bottom: 2px solid var(--text-color);
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
   min-width: 260px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  font-size: 2.5rem;
-
-  .name {
-    margin-left: 0.5rem;
-    font-weight: 700;
-
-    @include desktop {
-      font-size: 3.5rem;
-    }
-  }
 
   @include desktop {
-    display: block;
-    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
     border-bottom: 0;
-    border-right: 2px solid black;
-    padding-right: 1rem;
-    margin-right: 1rem;
+    border-right: 2px solid var(--text-color);
+    padding-right: 2rem;
+    margin-right: 2rem;
     padding-bottom: 0rem;
     margin-bottom: 0rem;
+  }
+
+  .logo-container {
+    max-width: 200px;
   }
 }
 
 .intro-right {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
   max-width: 720px;
 }
 
-.content-logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  .logo-container {
-    width: 150px;
-    height: 150px;
+.email {
+  font-weight: bold;
+  // color: var(--secondary-color);
+}
 
-    @include desktop {
-      width: 200px;
-      height: 200px;
-    }
+.intro ul {
+  padding: 0;
+  list-style: none;
+  font-size: 1.25rem;
+
+  li {
+    margin-bottom: 0.5rem;
   }
+}
+
+.comment {
+  color: var(--comment-color);
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: bold;
 }
