@@ -23,12 +23,14 @@ class Home extends Component {
                 <strong>Hi, I'm Joe.&nbsp;</strong>
                 <span>I enjoy making things with code.&nbsp;</span>
               </p>
-              <ul className="links">
-                <code className="comment">// links</code>
-                <li><IconLink url="https://github.com/jnruel" text="Github" icon="github"/></li>
-                <li><IconLink url="https://codepen.io/jruel" text="Codepen" icon="codepen"/></li>
-                <li><IconLink url="https://www.linkedin.com/in/joeruel/" text="LinkedIn" icon="linkedin" /></li>
-              </ul>
+              <div className="links-container">
+                <ul className="links">
+                  <code className="comment">// links</code>
+                  <li><IconLink url="https://github.com/jnruel" text="Github" icon="github"/></li>
+                  <li><IconLink url="https://codepen.io/jruel" text="Codepen" icon="codepen"/></li>
+                  <li><IconLink url="https://www.linkedin.com/in/joeruel/" text="LinkedIn" icon="linkedin" /></li>
+                </ul>
+              </div>
               <ul className="contact">
                 <code className="comment">// contact</code>
                 <li style={{display: 'flex'}} className="email"><Icon icon="email" /> joe [at] jruel [dot] com</li>
