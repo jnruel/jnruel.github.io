@@ -7,12 +7,7 @@
   "scripts": {
     "build": "webpack --config webpack.prod.js",
     "dev": "webpack-dev-server --open --config webpack.dev.js",
-    "deploy": "npm run build && gh-pages -d dist -b master",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "postbuild": "react-snap"
-  },
-  "reactSnap": {
-    "source": "dist"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "homepage": "https://jruel.com",
@@ -33,7 +28,6 @@
     "postcss-loader": "^4.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-snap": "^1.23.0",
     "sass": "^1.26.11",
     "sass-loader": "^10.0.2",
     "style-loader": "^1.2.1",
