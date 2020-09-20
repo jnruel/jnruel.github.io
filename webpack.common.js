@@ -1,7 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const Critters = require('critters-webpack-plugin');
 
 module.exports = {
   entry: {
@@ -34,7 +33,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/index.html'
+      template: './src/index.html',
     }),
     new MiniCssExtractPlugin({
       // Options similar to the same options in webpackOptions.output
@@ -42,12 +41,7 @@ module.exports = {
       filename: '[name].[hash].css',
       chunkFilename: '[id].[hash].css',
     }),
-    new Critters({
-      // Fix for: https://github.com/GoogleChromeLabs/critters/issues/34
-      pruneSource: false,
-      // Don't inline critical font-face rules, but preload the font URLs:
-      preloadFonts: true
-    }),
+
   ],
   optimization: {
     splitChunks: {
