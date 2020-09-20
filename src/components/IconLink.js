@@ -1,4 +1,5 @@
-import React from 'react';
+import { h } from 'preact';
+
 import Icon from './Icon';
 
 const linkStyles = {

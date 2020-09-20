@@ -26,8 +26,7 @@
     "normalize-scss": "^7.0.1",
     "postcss": "^8.0.5",
     "postcss-loader": "^4.0.0",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
+    "preact": "^10.4.8",
     "sass": "^1.26.11",
     "sass-loader": "^10.0.2",
     "style-loader": "^1.2.1",
@@ -35,5 +34,8 @@
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0",
     "webpack-merge": "^5.1.4"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-react-jsx": "^7.10.4"
   }
 }

@@ -1,7 +1,9 @@
-import React, { Component } from 'react'
+// import React, { Component } from 'react'
 import Logo from './Logo';
 import IconLink from './IconLink';
 import Icon from './Icon';
+import { h, render } from 'preact';
+import { Component } from 'preact/compat';
 
 class Home extends Component {
   constructor(props) {

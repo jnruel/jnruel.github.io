@@ -1,4 +1,5 @@
-import React from 'react';
+import { h } from 'preact';
+
 const Logo = ({
   width = '100%',
   height = '100%',
