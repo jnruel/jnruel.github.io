@@ -1,9 +1,20 @@
-import React from 'react';
-import { render } from 'react-dom';
-import App from './components/App'
 
+import { h, render } from 'preact';
+import { PureComponent } from 'preact/compat';
+import Home from './components/Home';
 import './styles/main.scss'
 
-const rootElement = document.getElementById('root');
+// class App extends PureComponent {
+//   render() {
+//     return(<Home/>)
+//   }
+// }
 
+class App extends PureComponent {
+  render(props) {
+    return <Home/>
+  }
+}
+
+const rootElement = document.getElementById('root');
 render(<App />, rootElement);
