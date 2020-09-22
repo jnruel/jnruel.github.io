@@ -16,14 +16,14 @@ class Home extends Component {
         <div className="intro">
           <div className="intro-left">
             <div className="logo-container">
-              <Logo width="100%" height="100%"/>
+              <Logo />
             </div>
           </div>
           <div className="intro-right">
             <div className="bio">
               <p>
-                <strong>Hi, I'm Joe.&nbsp;</strong>
-                <span>I enjoy making things with code.&nbsp;</span>
+                <h1>Hi, I'm Joe.&nbsp;</h1>
+                <h2>I enjoy making things with code.&nbsp;</h2>
               </p>
               <div className="links-container">
                 <ul className="links">

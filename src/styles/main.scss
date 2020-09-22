@@ -15,7 +15,6 @@ a:visited {
   text-decoration: underline;
   text-decoration-style: solid;
 
-
   &:hover,
   &:active {
     color: var(--link-hover-color);
@@ -48,7 +47,6 @@ main {
   min-height: 250px;
   padding: 2rem 1rem;
   max-width: 500px;
-  font-size: 1.5rem;
 
   @include desktop {
     max-width: 100%;
@@ -80,6 +78,22 @@ main {
 
   .logo-container {
     max-width: 130px;
+  }
+}
+
+.bio {
+  h1, h2 {
+    display: inline;
+  }
+
+  h1 {
+    font-size: 1.7rem;
+    font-weight: bold;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    font-weight: normal;
   }
 }
 

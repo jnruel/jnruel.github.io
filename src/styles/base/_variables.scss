@@ -3,18 +3,41 @@ $screen-desktop-min: 992px;
 $screen-tablet-min: 768px;
 
 :root {
-  --link-color: #008080;
-  --link-hover-color: #85144B;
-  --text-color: #1d3b53;
-  --bg-color: #FFF;
-  --comment-color: #80a4c2;
+  --color-teal: #008080;
+  --color-bermuda: #7FDBCA;
+  --color-nevada: #637777;
+  --color-scorpion: #575656;
+  --color-french-pass-blue: #C5E4FD;
+  --color-purple-heart: #7720B1;
+  --color-biloba-flower: #C792EA;
+  --color-white: #FBFBFB;
+  --color-santas-gray: #989FB1;
+  --color-yellow-green: #ADDB67;
+  --color-midnight-black: #011627;
+
+  // Theme colors
+  --link-color: var(--color-purple-heart);
+  --link-hover-color: var(--color-biloba-flower);
+  --text-color: var(--color-midnight-black);
+  --bg-color: var(--color-white);
+  --comment-color: var(--color-santas-gray);
+
+  // Logo Colors
+  --logo-bg-color: var(--color-french-pass-blue);
+  --logo-text-color: var(--color-purple-heart);
+  --logo-text-accent-color: var(--color-biloba-flower);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --link-color: #b33c99;
-    --text-color: #1d3b53;
-    --bg-color: #FFF;
-    --comment-color: #80a4c2;
+    --link-color: var(--color-yellow-green);
+    --link-hover-color: var(--color-bermuda);
+    --text-color: var(--color-white);
+    --bg-color: var(--color-midnight-black);
+    --comment-color: var(--color-nevada);
+
+    --logo-bg-color: var(--color-teal);
+    --logo-text-color: var(--color-yellow-green);
+    --logo-text-accent-color: var(--color-scorpion);
   }
 }
