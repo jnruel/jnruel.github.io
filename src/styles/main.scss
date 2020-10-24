@@ -20,6 +20,15 @@ a:visited {
     color: var(--link-hover-color);
     text-decoration-style: dashed;
   }
+
+  &:focus {
+    outline: 2px dashed var(--logo-text-accent-color);
+  }
+}
+
+::selection {
+  background-color: var(--logo-text-accent-color);
+  color: var(--logo-text-color);
 }
 
 .icon-link {
@@ -45,39 +54,43 @@ main {
   flex-direction: column;
   justify-content: center;
   min-height: 250px;
-  padding: 2rem 1rem;
   max-width: 500px;
+  padding: 0 1rem;
 
-  @include desktop {
+  @include tablet {
+    padding: 2rem 1rem;
     max-width: 100%;
     flex-direction: row;
   }
 }
 
 .intro-left {
-  border-bottom: 2px solid var(--text-color);
-  padding-bottom: 1rem;
-  margin-bottom: 1rem;
   min-width: 260px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  order: 1;
 
-  @include desktop {
+  .logo-container {
+    max-width: 100px;
+  }
+
+  @include tablet {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    border-bottom: 0;
-    border-right: 2px solid var(--text-color);
+    border-top: 0;
+    border-right: 2px solid var(--comment-color);
     padding-right: 2rem;
     margin-right: 2rem;
-    padding-bottom: 0rem;
-    margin-bottom: 0rem;
-  }
+    padding-top: 0rem;
+    margin-top: 0rem;
+    order: 0;
 
-  .logo-container {
-    max-width: 130px;
+    .logo-container {
+      max-width: 130px;
+    }
   }
 }
 
@@ -102,6 +115,11 @@ main {
   flex-direction: column;
   justify-content: center;
   max-width: 720px;
+  order: 0;
+
+  @include tablet {
+    order: 1;
+  }
 }
 
 .email {
@@ -124,3 +142,35 @@ main {
   font-style: italic;
   font-weight: bold;
 }
+
+
+svg#logo {
+  animation: shadow 4s ease-in-out forwards;
+
+  #top,
+  #bottom {
+    stroke-dasharray: 100;
+    stroke-dashoffset: 100;
+    animation: draw 2s ease-in-out forwards;
+    fill: transparent;
+
+  }
+
+  @keyframes draw {
+    to {
+      stroke-dashoffset: 0;
+      fill: var(--logo-text-color);
+    }
+  }
+
+  @keyframes shadow {
+    from {
+      filter: drop-shadow( 5px 6px 0px transparent);
+    }
+
+    to {
+      filter: drop-shadow( 5px 6px 0px var(--logo-text-accent-color));
+    }
+  }
+}
+
